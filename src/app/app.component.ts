@@ -9,14 +9,14 @@ export class AppComponent {
   title:string = 'Pagina Nutricion';
 
   clients = [
-    {'name': 'Tomas', 'lastName': 'Fernandez', 'age': '22'},
-    {'name': 'Luciana', 'lastName': 'Godio', 'age': '24'}
+    {'name': 'Tomas', 'lastName': 'Fernandez', 'email': 'ejemplo1@gmail.com'},
+    {'name': 'Luciana', 'lastName': 'Godio', 'email': 'ejemplo2@gmail.com'}
   ]
 
   model:any = {};
 
   addClient():void{
-
+    this.clients.push(this.model);
   }
 
   deleteClient():void{
